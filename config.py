@@ -1,0 +1,19 @@
+import os
+
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+POSTGRES_URI = os.getenv("POSTGRES_URI")
+REGISTRATION_CHANNEL_ID = int(os.getenv("REGISTRATION_CHANNEL_ID", 0))
+REGISTERED_ROLE_ID = int(os.getenv("REGISTERED_ROLE_ID", 0))
+GAMEMASTER_ROLE_ID = int(os.getenv("GAMEMASTER_ROLE_ID", 0))
+ROUND_DURATION_SECONDS = int(os.getenv("ROUND_DURATION_SECONDS", 3600))
+
+STARTING_CASH = 10000
+MAX_CORP_MEMBERS = 5
+WAR_COST = 500
+UPGRADE_COST = 1000
+MARKET_EVENT_COST = 750
+
+RESOURCES = ["Oil", "Food", "Metals", "Technology", "Energy"]
+STOCKS = ["NovaCorp", "IronVault", "SkyTrade", "DeepMine", "PulseNet"]
+
+BOT_OWNER_ID = int(os.getenv("BOT_OWNER_ID", 0))
